@@ -6,10 +6,11 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: hello
       - run: |
           echo "Hello, man"
       - name: run python script 
         run: |
           pip install -r requirements.txt 
-          python ci.py 
+          python ci.py  
