@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          echo "Hello, man"
       - name: run python script 
         run: |
           pip install -r requirements.txt 
