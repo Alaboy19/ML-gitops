@@ -1,4 +1,4 @@
-name: Github actions Demo
+name: IO demo 
 on: [push]
 
 jobs:
@@ -14,5 +14,5 @@ jobs:
                     print(f'VAL=true', file=f)
             - name: print value
               run: echo "the value is ${{steps.set-var.outputs.VAL}}"
-               
+
               
